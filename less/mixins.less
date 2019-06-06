@@ -1,1 +1,11 @@
 // Mixins in here
+.bordered{
+    border-bottom: 0.2rem dashed grey;
+    padding-bottom: 1rem;
+}
+.flexdisplay (@w,@j, @a) {
+    display: flex;
+    flex-wrap: @w;
+    justify-content: @j;
+    align-content: @a;
+}
