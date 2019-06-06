@@ -183,8 +183,8 @@ img {
   padding-bottom: 1.2rem;
 }
 .navigation-section .top {
-  padding: 5px;
-  width: 48%;
+  padding: 2px 0 2px 2px;
+  width: 50%;
 }
 .navigation-section nav {
   display: flex;
@@ -251,6 +251,17 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .btn button {
+  width: 85%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+  border-radius: 1.2rem;
+  font-size: 1.8rem;
+  border: 0.09rem solid grey;
 }
 .home .content-pick {
   padding-top: 30px;
