@@ -14,8 +14,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,7 +54,7 @@
   }
   .btn {
     button{
-      .signup(85%, green, 1.8rem, 1.2rem, grey);
+      .signup(85%, @button-bg, 1.8rem, 1.2rem, grey);
     }
   }
 
@@ -69,6 +67,66 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+  }
+}
+@media @mobile {
+  .home {
+    .content-section {
+      flex-direction:column;
+  
+      .text-content {
+        width: 100%;
+        padding-right: 1%;
+      }
+  
+      .img-content {
+        width: 100%;
+        padding-left: 1%;
+      }
+    }
+  
+    .inverse-content {
+      padding-bottom: 30px;
+      border-bottom: 2px dashed @navigation-border;
+  
+      .text-content {
+        padding-left: 1%;
+        padding-right: 0;
+      }
+  
+      .img-content {
+        padding-right: 1%;
+        padding-left: 0;
+      }
+    }
+  
+    .content-destination {
+      width: 100%;
+      margin: 0 auto 30px;
+  
+      img {
+        border-radius: 10px;
+      }
+    }
+    .btn {
+      button{
+        .signup(85%, @button-bg, 1.8rem, 1.2rem, grey);
+      }
+    }
+  
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px dashed @navigation-border;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: none;
+  
+      .destination {
+        width: 30%;
+        margin-bottom: 30px;
+      }
     }
   }
 }
