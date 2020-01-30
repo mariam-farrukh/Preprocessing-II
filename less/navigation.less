@@ -1,1 +1,29 @@
 // Navigation Styles here
+.navigation-section{
+    .flexdisplay(wrap, flex-start, space-between);
+        @media @mobile {
+            .flexdisplay(flex, center, center);
+        }
+    .top{
+        padding: 2px 0 2px 2px;
+        width: 50%;
+    }
+        @media @mobile {
+            .top {
+                width: 100%;
+                .flexdisplay(flex, space-evenly, center);
+            };
+        }
+    nav{
+        .flexdisplay(wrap, space-evenly, center);
+        a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-size: 1.6rem;
+
+        }
+
+    }
+    .bordered();
+}
+       
